@@ -1,0 +1,14 @@
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\bin\Debug\netcoreapp2.1\ASPNetRestFul.deps.json
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\bin\Debug\netcoreapp2.1\ASPNetRestFul.runtimeconfig.json
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\bin\Debug\netcoreapp2.1\ASPNetRestFul.runtimeconfig.dev.json
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\bin\Debug\netcoreapp2.1\ASPNetRestFul.dll
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.csprojAssemblyReference.cache
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.csproj.CoreCompileInputs.cache
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.RazorAssemblyInfo.cache
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.RazorAssemblyInfo.cs
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.AssemblyInfoInputs.cache
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.AssemblyInfo.cs
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.RazorTargetAssemblyInfo.cache
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\bin\Debug\netcoreapp2.1\ASPNetRestFul.pdb
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.dll
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.pdb
