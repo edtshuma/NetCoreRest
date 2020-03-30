@@ -26,6 +26,8 @@ namespace ASPNetRestFul
         {
             services
                 .AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services
+                .AddRouting(options => options.LowercaseUrls = true);
            
         }
 
