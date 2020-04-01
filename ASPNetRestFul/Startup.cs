@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASPNetRestFul.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,11 @@ namespace ASPNetRestFul
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+                .AddMvc(options =>
+                {
+                    options.Filters.Add<JsonExceptionFilter>();
+                })
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services
                 .AddRouting(options => options.LowercaseUrls = true);
             services
