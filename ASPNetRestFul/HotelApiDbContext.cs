@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ASPNetRestFul.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,11 @@ namespace ASPNetRestFul
     {
         public HotelApiDbContext(DbContextOptions options)
             : base(options) { }
+
+        internal bool Any()
+        {
+            throw new NotImplementedException();
+        }
 
         public DbSet<RoomEntity> Rooms { get; set; }
     }
