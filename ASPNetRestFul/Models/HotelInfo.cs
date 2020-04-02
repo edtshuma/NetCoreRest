@@ -15,6 +15,8 @@ namespace ASPNetRestFul.Models
 
         public string Website { get; set; }
 
+        public string Href { get; set; }
+
         public Address Location { get; set; }
 
       public class Address
