@@ -30,6 +30,7 @@ namespace ASPNetRestFul
                 .AddMvc(options =>
                 {
                     options.Filters.Add<JsonExceptionFilter>();
+                    options.Filters.Add<RequireHttpsOrCloseAttribute>();
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services
@@ -52,8 +53,7 @@ namespace ASPNetRestFul
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-
+            }          
             app.UseMvc();
         }
     }
