@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ASPNetRestFul.Filters;
+using ASPNetRestFul.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +27,9 @@ namespace ASPNetRestFul
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<HotelInfo>(
+                Configuration.GetSection("Info"));
+
             services
                 .AddMvc(options =>
                 {
@@ -45,6 +49,13 @@ namespace ASPNetRestFul
                     options.ApiVersionSelector =
                                    new CurrentImplementationApiVersionSelector(options);
                 });
+            services
+                .AddCors(options =>
+                {
+                    options.AddPolicy("AllowMyApp",
+                        policy => policy
+                            .AllowAnyOrigin());
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,8 +64,13 @@ namespace ASPNetRestFul
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }          
+            }
+
+            //CORS: above any method tt generates a response eg MVC
+            app.UseCors("AllowMyApp");
+
             app.UseMvc();
+          
         }
     }
 }
