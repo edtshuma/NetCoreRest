@@ -10,5 +10,6 @@ namespace ASPNetRestFul.Models
         public String Name { get; set; }
 
         public decimal Rate { get; set; }
+        public string Href { get; internal set; }
     }
 }

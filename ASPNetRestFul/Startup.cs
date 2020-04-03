@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ASPNetRestFul.Filters;
 using ASPNetRestFul.Models;
+using ASPNetRestFul.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,10 @@ namespace ASPNetRestFul
             services.Configure<HotelInfo>(
                 Configuration.GetSection("Info"));
 
+            //AddScoped- a new instance of RoomService will be created
+            //4 evry incoming rqst, rather than a Singeton svc wc wll 
+            //only be created once
+            services.AddScoped<IRoomService, DefaultRoomService>();
 
             services.AddDbContext<HotelApiDbContext>( 
                 options => options.UseInMemoryDatabase("manchesterdb")
