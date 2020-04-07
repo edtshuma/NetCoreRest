@@ -8,7 +8,7 @@ C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcorea
 C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.AssemblyInfoInputs.cache
 C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.AssemblyInfo.cs
 C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.RazorTargetAssemblyInfo.cache
+C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.csprojAssemblyReference.cache
 C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\bin\Debug\netcoreapp2.1\ASPNetRestFul.pdb
 C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.dll
 C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.pdb
-C:\Users\tshumae.FBC\source\repos\ASPNetRestFul\ASPNetRestFul\obj\Debug\netcoreapp2.1\ASPNetRestFul.csprojAssemblyReference.cache

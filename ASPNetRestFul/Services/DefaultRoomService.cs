@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using ASPNetRestFul.Models;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace ASPNetRestFul.Services
@@ -11,10 +10,12 @@ namespace ASPNetRestFul.Services
     {
 
         private readonly HotelApiDbContext _context;
+        private readonly IMapper _mapper;
 
-        public DefaultRoomService(HotelApiDbContext context)
+        public DefaultRoomService(HotelApiDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         async Task<Room> IRoomService.GetRoomAsync(Guid id)
@@ -28,15 +29,16 @@ namespace ASPNetRestFul.Services
                 return null;
             }
 
-            return new Room
-            {
-                Href = null,
-                Name = entity.Name,
-                Rate = entity.Rate / 100.0m
+            return _mapper.Map<Room>(entity);
+            //return new Room
+            //{
+            //    Href = null,
+            //    Name = entity.Name,
+            //    Rate = entity.Rate / 100.0m
 
-            };
+            //};
 
-           
+
         }
     }
 }

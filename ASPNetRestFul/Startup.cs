@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ASPNetRestFul.Filters;
+using ASPNetRestFul.Infrastructure;
 using ASPNetRestFul.Models;
 using ASPNetRestFul.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -41,6 +43,7 @@ namespace ASPNetRestFul
                 options => options.UseInMemoryDatabase("manchesterdb")
             );
 
+           
 
             services
                 .AddMvc(options =>
@@ -51,6 +54,7 @@ namespace ASPNetRestFul
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services
                 .AddRouting(options => options.LowercaseUrls = true);
+
             services
                 .AddApiVersioning(options =>
                 {
@@ -61,6 +65,7 @@ namespace ASPNetRestFul
                     options.ApiVersionSelector =
                                    new CurrentImplementationApiVersionSelector(options);
                 });
+
             services
                 .AddCors(options =>
                 {
@@ -68,6 +73,10 @@ namespace ASPNetRestFul
                         policy => policy
                             .AllowAnyOrigin());
                 });
+
+            services.AddAutoMapper(typeof(MappingProfile));
+            //    .AddAutoMapper(
+            //   options => options.AddProfile<MappingProfile>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,6 @@
 ﻿using ASPNetRestFul.Models;
 using ASPNetRestFul.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -15,11 +16,13 @@ namespace ASPNetRestFul.Controllers
     public class RoomsController : ControllerBase
     {
         private readonly IRoomService _roomService;
+        private readonly IMapper _mapper;
 
-        public RoomsController(IRoomService roomService)
+        public RoomsController(IRoomService roomService, IMapper mapper)
         {
 
             _roomService = roomService;
+            _mapper = mapper;
         }
 
         [HttpGet(Name =nameof(GetRooms))]
@@ -39,7 +42,7 @@ namespace ASPNetRestFul.Controllers
             if (room == null) return NotFound();
 
             return room;
-
+           
         }
     }
 }
